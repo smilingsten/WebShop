@@ -39,6 +39,10 @@ background: #141;
 color: #bfb; 
 font-size: small; 
 } 
+/* make generated add to cart buttons that are forms appear next to price*/
+#store .entry form, #store .entry form div { 
+display: inline; 
+}
 
 /* Styles for products/index */ 
 #product-list table { 
