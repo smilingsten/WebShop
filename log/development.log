@@ -834,3 +834,97 @@ Processing StoreController#index (for 127.0.0.1 at 2010-06-13 17:54:26) [GET]
 Rendering template within layouts/store
 Rendering store/index
 Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/store/]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-13 18:01:17) [POST]
+  Parameters: {"authenticity_token"=>"UMMfghqH7CNluVpb15cuX0YP4mF9qlZAPpqIA/PEpX0=", "id"=>"1"}
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/store/add_to_cart/1]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-13 18:01:23) [GET]
+  Parameters: {"id"=>"wibble"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Product with ID=wibble):
+  app/controllers/store_controller.rb:6:in `add_to_cart'
+
+Rendered rescues/_trace (29.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-13 18:04:09) [GET]
+  Parameters: {"id"=>"wibble"}
+  [4;35;1mProduct Load (0.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Attempt to access invalid product wibble
+Redirected to http://localhost:3000/store
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/store/add_to_cart/wibble]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-13 18:04:09) [GET]
+  [4;36;1mProduct Load (1.2ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 18ms (View: 13, DB: 2) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-13 18:04:12) [POST]
+  Parameters: {"authenticity_token"=>"UMMfghqH7CNluVpb15cuX0YP4mF9qlZAPpqIA/PEpX0=", "id"=>"1"}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/store/add_to_cart/1]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-13 18:04:17) [GET]
+  Parameters: {"id"=>"wibble"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Attempt to access invalid product wibble
+Redirected to http://localhost:3000/store
+Completed in 73ms (DB: 0) | 302 Found [http://localhost/store/add_to_cart/wibble]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-13 18:04:17) [GET]
+  [4;35;1mProduct Load (1.1ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-13 18:11:23) [GET]
+  [4;36;1mProduct Load (1.1ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 24ms (View: 17, DB: 2) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-13 18:11:31) [GET]
+  [4;35;1mProduct Load (1.1ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-13 18:12:01) [GET]
+  Parameters: {"id"=>"wibble"}
+  [4;36;1mProduct Load (0.1ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Attempt to access invalid product wibble
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/store/add_to_cart/wibble]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-13 18:12:01) [GET]
+  [4;35;1mProduct Load (1.1ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-13 18:12:07) [GET]
+  [4;36;1mProduct Load (1.1ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/store]
